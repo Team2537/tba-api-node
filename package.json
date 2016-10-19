@@ -1,0 +1,26 @@
+{
+  "name": "tba-api",
+  "version": "1.0.0",
+  "description": "Simple Node API for The Blue Alliance",
+  "main": "tba-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team2537/tba-api-node.git"
+  },
+  "keywords": [
+    "FIRST",
+    "Robotics",
+    "The",
+    "Blue",
+    "Alliance"
+  ],
+  "author": "Alex Taber <aft.pokemon@gmail.com> (http://www.ataber.pw)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Team2537/tba-api-node/issues"
+  },
+  "homepage": "https://github.com/Team2537/tba-api-node#readme"
+}
