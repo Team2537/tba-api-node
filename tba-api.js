@@ -108,38 +108,38 @@ exports.getEventList = function(year, callback) {
     TBAGET('events/' + year, callback);
 }
 
-exports.getEvent = function(event, callback) {
-    TBAGET('event/' + event, callback);
+exports.getEvent = function(eventCode, callback) {
+    TBAGET('event/' + eventCode, callback);
 }
 
-exports.getEventTeams = function(event, callback) {
-    this.getEvent(event + '/teams', callback);
+exports.getEventTeams = function(eventCode, callback) {
+    this.getEvent(eventCode + '/teams', callback);
 }
 
-exports.getEventMatches = function(event, callback) {
-    this.getEvent(event + '/matches', callback);
+exports.getEventMatches = function(eventCode, callback) {
+    this.getEvent(eventCode + '/matches', callback);
 }
 
-exports.getEventStats = function(event, callback) {
-    this.getEvent(event + '/stats', callback);
+exports.getEventStats = function(eventCode, callback) {
+    this.getEvent(eventCode + '/stats', callback);
 }
 
-exports.getEventRankings = function(event, callback) {
-    this.getEvent(event + '/rankings', callback);
+exports.getEventRankings = function(eventCode, callback) {
+    this.getEvent(eventCode + '/rankings', callback);
 }
 
-exports.getEventAwards = function(event, callback) {
-    this.getEvent(event + '/awards', callback);
+exports.getEventAwards = function(eventCode, callback) {
+    this.getEvent(eventCode + '/awards', callback);
 }
 
-exports.getEventDistrictPoints = function(event, callback) {
-    this.getEvent(event + '/district_points', callback);
+exports.getEventDistrictPoints = function(eventCode, callback) {
+    this.getEvent(eventCode + '/district_points', callback);
 }
 
 // Match API Requests
 
-exports.getSingleMatch = function(match_key, callback) {
-    TBAGET('match/' + match_key, callback);
+exports.getSingleMatch = function(matchKey, callback) {
+    TBAGET('match/' + matchKey, callback);
 }
 
 // District API Requests
@@ -148,7 +148,7 @@ exports.getDistrictList = function(year, callback) {
     TBAGET('districts/' + year, callback);
 }
 
-exports.getDistrictEvent = function(district, year, callback) {
+exports.getDistrictEvents = function(district, year, callback) {
     TBAGET('district/' + district + '/' + year + '/events', callback);
 }
 
